@@ -1,0 +1,54 @@
+
+## Pré-requisitos
+
+- [Go](https://golang.org/) 1.25.3 ou superior
+- [Docker](https://www.docker.com/) (opcional, para rodar o banco de dados PostgreSQL)
+- PostgreSQL
+
+## Instalação
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/anselmotaccola/api-go-gin.git
+   cd api-go-gin
+
+
+
+2. Instale as dependências do projeto:
+    ```bash
+    go mod tidy
+
+
+3. Configure o banco de dados PostgreSQL no arquivo docker-compose.yml ou diretamente no código.
+
+4. Inicie o banco de dados (se estiver usando Docker):
+    ```bash
+    go mod tidy
+
+Uso
+1. Execute a aplicação:
+    ```bash
+    go run main.go
+
+2. Acesse a API em http://localhost:8080.
+
+## Estrutura de Diretórios
+*controllers/*: Contém os controladores responsáveis pela lógica de negócios.
+*database/*: Configuração e inicialização da conexão com o banco de dados.
+*models/*: Definição das entidades e modelos do banco de dados.
+*routes/*: Definição das rotas da API.
+
+## Dependências
+As principais dependências utilizadas no projeto estão listadas no arquivo go.mod. Algumas delas incluem:
+
+[Gin](https://github.com/gin-gonic/gin): Framework web para Go.
+[GORM](https://gorm.io/): ORM para Go.
+[PostgreSQL Driver](https://gorm.io/docs/driver_postgres.html): Driver para integração com PostgreSQL.
+
+
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+
+Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
